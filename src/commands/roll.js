@@ -16,4 +16,6 @@ async function execute(interaction) {
   await interaction.reply(`🎲 Nice! You rolled ${roll}!`);
 }
 
+//we need to register the command, in order for the discord server to be aware of it and notify the bot to trigger the command
+
 export { data, execute };
