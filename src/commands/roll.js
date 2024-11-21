@@ -8,14 +8,13 @@ function generateRandom(min = 1, max = 12) {
 //define the command info
 const data = new SlashCommandBuilder()
   .setName("roll")
-  .setDescription("Roll the dice!");
+  .setDescription("Roll the dice 🎲!");
 
 //define the execution handler
 async function execute(interaction) {
-  const roll = generateRandom();
-  await interaction.reply(`🎲 Nice! You rolled ${roll}!`);
+  // const roll = generateRandom();
+  await interaction.reply(`Nice! You rolled 4!`);
 }
 
 //we need to register the command, in order for the discord server to be aware of it and notify the bot to trigger the command
-
 export { data, execute };
