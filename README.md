@@ -1,4 +1,4 @@
-### Node Discord Bot
+# Node Discord Bot
 
 Node.js fun Discord bot that can display the weather forecast, the position of sun and moon and tell jokes.
 
@@ -16,12 +16,12 @@ Node.js fun Discord bot that can display the weather forecast, the position of s
 ## Environment variables
 
 Populate the following keys:
-`code`
+```
 DISCORD_TOKEN=
 CLIENT_ID=
 GUILD_ID=
 WHEATHER_API_KEY=
-`code`
+```
 
 📌 Resources
 
