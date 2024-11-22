@@ -19,6 +19,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.commands = new Collection();
 
+//add the roll command
 client.commands.set(rollCommand.data.name, rollCommand);
 
 //add an event listener that will be triggered when the bot logs in (uses discord web sockets)
