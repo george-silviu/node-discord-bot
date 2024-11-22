@@ -16,6 +16,7 @@ Node.js fun Discord bot that can display the weather forecast, the position of s
 ## Environment variables
 
 Populate the following keys:
+
 ```
 DISCORD_TOKEN=
 CLIENT_ID=

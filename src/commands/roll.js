@@ -12,8 +12,8 @@ const data = new SlashCommandBuilder()
 
 //define the execution handler
 async function execute(interaction) {
-  // const roll = generateRandom();
-  await interaction.reply(`Nice! You rolled 4!`);
+  const random = generateRandom();
+  await interaction.reply(`Nice! You rolled ${random}🎲🎲!`);
 }
 
 //we need to register the command, in order for the discord server to be aware of it and notify the bot to trigger the command

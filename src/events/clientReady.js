@@ -1,15 +1,6 @@
 import { REST, Routes } from "discord.js";
-import { configDotenv } from "dotenv";
-configDotenv();
 
 const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
-
-// const commands = [
-//   {
-//     name: "ping",
-//     description: "Replies with Pong!",
-//   },
-// ];
 
 async function clientReadyHandler(client) {
   console.log(`Logged in as ${client.user.tag}!`);
