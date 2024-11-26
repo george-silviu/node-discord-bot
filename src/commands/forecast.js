@@ -1,21 +1,16 @@
 //make a request to the weather api and return the data
 import { SlashCommandBuilder } from "discord.js";
-import axios from "axios";
-
-const weatherApiKey = process.env.WEATHER_API_KEY;
+import { fetchForecast } from "../requests/forecast.js";
 
 const data = new SlashCommandBuilder()
-  .setName("weather")
-  .setDescription("Ask me how the weather will be!");
+  .setName("forecast")
+  .setDescription("Responds with weather forecast for the next three days!");
 
 async function execute(interaction) {
   //fetch data from weather api and return it to discord
   try {
-    const forecast = await axios.get(
-      `https://api.weatherapi.com/v1/forecast.json?q=Bucharest&days=1&key=${weatherApiKey}`
-    );
-
-    console.log(forecast.data);
+    //test forecast
+    console.log(await fetchForecast("Bucharest"));
   } catch (error) {
     console.log(error.data);
   }

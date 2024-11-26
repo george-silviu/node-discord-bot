@@ -1,10 +1,14 @@
 # Node Discord Bot
 
-Node.js fun Discord bot that can display the weather forecast, the position of sun and moon and tell jokes.
+Node.js Discord bot that can:
+
+- ✅ display the weather forecast;
+- ✅ display the position of sun and moon;
+- ✅ tell jokes.
 
 ![app-schema](/src/assets/app-schema.png)
 
-to do: add schema details
+In our Node app, the Discord Bot will connect to Discord API using `discord.js` library, using WebSocket connection, and will listen for any commands prompted from the Discord UI. The Bot has defined a set of commands that will run each time a user uses a slash command.
 
 ## Steps for setup
 
@@ -14,7 +18,7 @@ to do: add schema details
 4. Create a Discord server to test the bot, then find the server/guild ID by turning the developer mode.
 5. Navigate to [Discord Developers page](https://discord.com/developers/applications) and create a new app, then find the application/client ID.
 6. Invite the bot to your server.
-7. Sign up to a free [Wheather API](https://www.weatherapi.com/) account and find your API key.
+7. Sign up to a free [Weather API](https://www.weatherapi.com/) account and find your API key.
 8. Create a `.env` file at the root of the project and insert the data as below.
 
 ## Environment variables
