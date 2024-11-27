@@ -16,9 +16,9 @@ async function fetchForecast(location) {
 
     const name = response.data.location.name;
     const country = response.data.location.country;
-    const locationData = `${name}, ${country}`;
+    const locationName = `${name}, ${country}`;
 
-    const forecastData = response.data.forecast.forecastday.map(
+    const weatherData = response.data.forecast.forecastday.map(
       (forecastday) => {
         return {
           date: forecastday.date,
@@ -30,9 +30,10 @@ async function fetchForecast(location) {
       }
     );
 
-    return { locationData, forecastData };
+    return { locationName, weatherData };
   } catch (error) {
     console.error(error.message);
+    throw new Error(`Error fetching forecast for ${locationName}.`);
   }
 }
 
