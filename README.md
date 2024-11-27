@@ -15,9 +15,7 @@ In our Node app, the Discord Bot will connect to Discord API using `discord.js` 
 
 ## Bot tutorial in Discord Client
 
-<video width="320" height="240" controls>
-  <source src="./src/assets/bot-tutorial.mp4" type="video/mp4">
-</video>
+🔗[The video tutorial test from Discord client](https://github.com/george-silviu/node-discord-bot/raw/refs/heads/main/src/assets/bot-testing.mp4)
 
 ## Steps for setup
 
