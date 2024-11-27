@@ -10,6 +10,8 @@ import { interactionCreateHandler } from "./events/interactionCreate.js";
 
 import * as rollCommand from "./commands/roll.js";
 import * as forecastCommand from "./commands/forecast.js";
+import * as astroCommand from "./commands/astro.js";
+import * as jokeCommand from "./commands/jokes.js";
 
 //create a new instance of BOT
 //Gateway - refering to discord web socket api
@@ -23,6 +25,8 @@ client.commands = new Collection();
 //add the roll command
 client.commands.set(rollCommand.data.name, rollCommand);
 client.commands.set(forecastCommand.data.name, forecastCommand);
+client.commands.set(astroCommand.data.name, astroCommand);
+client.commands.set(jokeCommand.data.name, jokeCommand);
 
 //add an event listener that will be triggered when the bot logs in (uses discord web sockets)
 client.once(Events.ClientReady, clientReadyHandler);

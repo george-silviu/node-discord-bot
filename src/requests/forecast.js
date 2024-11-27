@@ -30,7 +30,17 @@ async function fetchForecast(location) {
       }
     );
 
-    return { locationName, weatherData };
+    const astroData = response.data.forecast.forecastday.map((forecastday) => {
+      return {
+        date: forecastday.date,
+        sunrise: forecastday.astro.sunrise,
+        sunset: forecastday.astro.sunset,
+        moonrise: forecastday.astro.moonrise,
+        moonset: forecastday.astro.moonset,
+      };
+    });
+
+    return { locationName, weatherData, astroData };
   } catch (error) {
     console.error(error.message);
     throw new Error(`Error fetching forecast for ${locationName}.`);
