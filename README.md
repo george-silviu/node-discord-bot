@@ -4,7 +4,8 @@ Node.js Discord bot that can:
 
 - ✅ display the weather forecast;
 - ✅ display the position of sun and moon;
-- ✅ tell jokes.
+- ✅ tell jokes;
+- ✅ inspire you with quotes from different categories;
 
 ![app-schema](/src/assets/app-schema.png)
 
@@ -19,7 +20,8 @@ In our Node app, the Discord Bot will connect to Discord API using `discord.js` 
 5. Navigate to [Discord Developers page](https://discord.com/developers/applications) and create a new app, then find the application/client ID.
 6. Invite the bot to your server.
 7. Sign up to a free [Weather API](https://www.weatherapi.com/) account and find your API key.
-8. Create a `.env` file at the root of the project and insert the data as below.
+8. Sign up to a free [API Ninjas](https://api-ninjas.com/) account and find your API key.
+9. Create a `.env` file at the root of the project and insert the data as below.
 
 ## Environment variables
 
@@ -30,6 +32,7 @@ DISCORD_TOKEN=
 CLIENT_ID=
 GUILD_ID=
 WHEATHER_API_KEY=
+API_NINJAS_KEY=
 ```
 
 ## Running the project
@@ -40,9 +43,12 @@ WHEATHER_API_KEY=
 ## 📌 Resources
 
 - [Discord.js](https://discord.js.org/)
+- [Discord.js Guide](https://discordjs.guide/)
 - [Discord Developer Portal](https://discord.com/developers/applications)
+- [Weather API](https://www.weatherapi.com/)
+- [API Ninjas](https://api-ninjas.com/)
 
 ## 🤔Fun stuff to do next:
 
 - Integrate the bot with AI
-- Play music
+- Integrate bot with a music streaming service
