@@ -11,7 +11,7 @@ Node.js Discord bot that can:
 
 ![app-schema](/src/assets/app-schema.png)
 
-In our Node app, the Discord Bot will connect to Discord API using `discord.js` library, using WebSocket connection, and will listen for any commands prompted from the Discord UI. The Bot has defined a set of commands that will run each time a user uses a slash command.
+In our Node app, the Discord Bot will connect to Discord API using `discord.js` library through WebSocket connection, and will listen for any commands prompted from the Discord UI. The Bot has defined a set of commands that will run each time a user uses a slash command.
 
 ## Bot tutorial in Discord Client
 
