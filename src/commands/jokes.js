@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from "discord.js";
+import { SlashCommandBuilder, EmbedBuilder } from "discord.js";
 import { fetchJoke } from "../requests/joke.js";
 
 const data = new SlashCommandBuilder()
@@ -11,7 +11,13 @@ async function execute(interaction) {
 
     const { joke } = await fetchJoke();
 
-    await interaction.editReply(joke);
+    const embed = new EmbedBuilder()
+      .setColor(0x3f704d)
+      .setTitle(`${joke}`)
+      .setTimestamp()
+      .setFooter({ text: "Powered by api-ninjas.com API" });
+
+    await interaction.editReply({ embeds: [embed] });
   } catch (error) {
     await interaction.editReply(error);
   }

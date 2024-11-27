@@ -7,9 +7,17 @@ Node.js Discord bot that can:
 - ✅ tell jokes;
 - ✅ inspire you with quotes from different categories;
 
+## General overview
+
 ![app-schema](/src/assets/app-schema.png)
 
 In our Node app, the Discord Bot will connect to Discord API using `discord.js` library, using WebSocket connection, and will listen for any commands prompted from the Discord UI. The Bot has defined a set of commands that will run each time a user uses a slash command.
+
+## Bot tutorial in Discord Client
+
+<video width="320" height="240" controls>
+  <source src="./src/assets/bot-tutorial.mp4" type="video/mp4">
+</video>
 
 ## Steps for setup
 
